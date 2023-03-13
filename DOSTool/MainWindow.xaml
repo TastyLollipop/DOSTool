@@ -17,7 +17,7 @@
         <Label Content="Instance Count" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="36.6" FontSize="20" Background="#00000000" Foreground="White"/>
         <TextBox x:Name="InstancesTextBox" Style="{StaticResource NormalTextBox}" TextWrapping="Wrap" Height="30" Background="{x:Null}" FontSize="20" TextAlignment="Center" Text="100" MaxLength="5" Foreground="#FFD7D7D7" CaretBrush="White"/>
         <Border BorderThickness="1" Height="10"/>
-        <Label Content="Packet Size" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="36.6" FontSize="20" Background="#00000000" Foreground="White"/>
+        <Label Content="Packet Size (Bytes)" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="36.6" FontSize="20" Background="#00000000" Foreground="White"/>
         <TextBox x:Name="PacketSizeTextBox" Style="{StaticResource NormalTextBox}" TextWrapping="Wrap" Height="30" Background="{x:Null}" FontSize="20" TextAlignment="Center" Text="1000" MaxLength="5" Foreground="#FFD7D7D7" CaretBrush="White"/>
         <Border BorderThickness="1" Height="10"/>
         <Button x:Name="PingButton" Style="{StaticResource NormalButton}" Content="Ping" Click="PingButton_Click" FontWeight="Bold" Height="36.6" Background="#FF42464D" Foreground="#FFD7D7D7"/>
