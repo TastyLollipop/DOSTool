@@ -1,0 +1,28 @@
+﻿<Window x:Class="DOS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DOS"
+        mc:Ignorable="d"
+        Title="DOS" Height="440" Width="450" ResizeMode="CanMinimize" Background="#FF42464D">
+    <StackPanel Margin="5,5,5,5">
+        <Label x:Name="InvokeTarget" Content="Host Name" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="36.6" FontSize="20" Background="#00000000" Foreground="White"/>
+
+        <TextBox x:Name="HostTextBox" Style="{StaticResource NormalTextBox}" TextWrapping="Wrap" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="30" Background="{x:Null}" FontSize="20" TextAlignment="Center" Foreground="#FFD7D7D7" CaretBrush="White"/>
+        <Border BorderThickness="1" Height="10"/>
+        <Label Content="Timeout (MS)" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Background="#00000000" Foreground="White"/>
+        <TextBox x:Name="TimeoutTextBox" Style="{StaticResource NormalTextBox}" TextWrapping="Wrap" Height="30" Background="{x:Null}" FontSize="20" TextAlignment="Center" Text="1000" MaxLength="5" Foreground="#FFD7D7D7" CaretBrush="White"/>
+        <Border BorderThickness="1" Height="10"/>
+        <Label Content="Instance Count" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="36.6" FontSize="20" Background="#00000000" Foreground="White"/>
+        <TextBox x:Name="InstancesTextBox" Style="{StaticResource NormalTextBox}" TextWrapping="Wrap" Height="30" Background="{x:Null}" FontSize="20" TextAlignment="Center" Text="100" MaxLength="5" Foreground="#FFD7D7D7" CaretBrush="White"/>
+        <Border BorderThickness="1" Height="10"/>
+        <Label Content="Packet Size" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="36.6" FontSize="20" Background="#00000000" Foreground="White"/>
+        <TextBox x:Name="PacketSizeTextBox" Style="{StaticResource NormalTextBox}" TextWrapping="Wrap" Height="30" Background="{x:Null}" FontSize="20" TextAlignment="Center" Text="1000" MaxLength="5" Foreground="#FFD7D7D7" CaretBrush="White"/>
+        <Border BorderThickness="1" Height="10"/>
+        <Button x:Name="PingButton" Style="{StaticResource NormalButton}" Content="Ping" Click="PingButton_Click" FontWeight="Bold" Height="36.6" Background="#FF42464D" Foreground="#FFD7D7D7"/>
+        <Border BorderThickness="1" Height="10"/>
+        <Button x:Name="CancelButton" Style="{StaticResource NormalButton}" Click="CancelButton_Click" IsEnabled="False" FontWeight="Bold" Height="36.6" Content="Cancel" Background="#FF42464D" Foreground="#FFD7D7D7"/>
+
+    </StackPanel>
+</Window>
