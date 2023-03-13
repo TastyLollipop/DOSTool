@@ -59,8 +59,6 @@ namespace DOS
             thread.Start();
         }
 
-        public static void ToggleThreadLife() { Network.stopFlag = !Network.stopFlag; }
-
         private static void ExecuteThreadCancel()
         {
             ToggleThreadLife();
@@ -72,5 +70,7 @@ namespace DOS
             cancelAction = delegate { UI.ChangeAppTitle("Idle"); };
             UI.invokeTarget.Dispatcher.Invoke(cancelAction);
         }
+
+        public static void ToggleThreadLife() { Network.stopFlag = !Network.stopFlag; }
     }
 }
